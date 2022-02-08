@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -31,6 +31,7 @@ body {
   color: #FFFFFF;
   background-color: #756257;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .button-hotel-search {
@@ -42,6 +43,7 @@ body {
   color: #FFFFFF;
   background-color: #756257;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .newsletter-button {
@@ -53,6 +55,7 @@ body {
   color: #FFFFFF;
   background-color: #83B3D3;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .page-header {
@@ -68,17 +71,6 @@ body {
   text-align: center;
   background-color: #FFFFFF;
   text-decoration: none;
-}
-
-.main-index {
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
-.main-inner {
-  color: #000000;
-  background-color: #FFFFFF;
-
 }
 
 .index-image {
@@ -122,11 +114,11 @@ background-color: #FFFFFF;
 }
 
 .advantages-item-light {
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-light-blue {
-  background-color: #83B3D333;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-heading {
@@ -233,7 +225,6 @@ text-transform: uppercase;
 line-height: 26px;
 font-weight: 700;
 color: #FFFFFF;
-text-transform: uppercase;
 }
 
 .hotel-filter-item {
@@ -241,11 +232,15 @@ text-transform: uppercase;
 }
 
 .button-submit {
+  font-size: 16px;
+  line-height: 20px;
   color: #FFFFFF;
   background-color:#83B3D3;
 }
 
 .button-reset {
+  font-size: 18px;
+  line-height: 23px;
   color: #FFFFFF;
   background-color: transparent;
   border: none;
@@ -287,6 +282,12 @@ background-color: #ffffff;
   text-decoration: none;
 }
 
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+
 .hotel-price {
   font-weight: 400;
   font-size: 18px;
@@ -294,6 +295,8 @@ background-color: #ffffff;
 }
 
 .button {
+  font-size: 16px;
+  line-height: 20px;
   color: #FFFFFF;
   background-color: #83B3D3;
   text-decoration: none;
@@ -302,21 +305,37 @@ background-color: #ffffff;
 }
 
 .button-brown {
+  font-size: 16px;
+  line-height: 20px;
   background-color: #756257;
 }
 
 .button-green {
+  font-size: 16px;
+  line-height: 20px;
   background-color: #7DB54F;
 }
 
 .hotel-grade {
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
   background-color: #F2F2F2;
   text-transform: uppercase;
 }
 
+.button-show-more {
+  font-size: 20px;
+  line-height: 25px;
+}
+
 .show-more {
   text-align: center;
+}
+
+.hotel-show-more {
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .pagination {
