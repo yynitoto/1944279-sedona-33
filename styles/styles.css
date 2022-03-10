@@ -117,11 +117,11 @@ body {
 }
 
 .navigation-link:hover .navigation-icon {
-  color: #756257;
+  fill: #756257;
 }
 
 .navigation-link:focus .navigation-icon {
-  color: #756257;
+  fill: #756257;
 }
 
 .navigation-icon-number {
@@ -160,6 +160,23 @@ body {
 
 .button-navigation-user:focus {
   outline: 3px solid #83B3D3;
+}
+
+.favorite-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  border-radius: 50%;
 }
 
 .main-container {
@@ -217,6 +234,7 @@ body {
 }
 
 .advantages-item {
+  position: relative;
   width: 400px;
   min-height: 384px;
   color: #000000;
@@ -252,30 +270,53 @@ body {
 }
 
 .advantages-icon-1::after {
+  display: block;
+  position: absolute;
+  top: 89px;
+  right: 162px;
+  margin: 0 auto;
   content: "";
   width: 74px;
   height: 72px;
-  top: 89px;
-  left: 162px;
   background-image: url("../images/advantage/icon-house.svg");
+  background-repeat: no-repeat;
 }
 
-.advantages-icon-2 {
+.advantages-icon-2::after {
+  display: block;
+  position: absolute;
+  top: 89px;
+  right: 162px;
+  margin: 0 auto;
+  content: "";
+  width: 74px;
+  height: 70px;
   background-image: url("../images/advantage/icon-food.svg");
   background-repeat: no-repeat;
-  background-position: 162px 89px;
 }
 
-.advantages-icon-3{
+.advantages-icon-3::after{
+  display: block;
+  position: absolute;
+  top: 89px;
+  right: 162px;
+  margin: 0 auto;
+  content: "";
+  width: 64px;
+  height: 75px;
   background-image: url("../images/advantage/icon-souvenir.svg");
   background-repeat: no-repeat;
-  background-position: center top;
 }
 
 .advantages-heading {
   margin: 0;
-  padding-top: 98px;
+  padding-top: 97px;
   text-transform: uppercase;
+}
+
+.advantages-services {
+  position: relative;
+  padding-top: 184px;
 }
 
 .advantages-description-number {
@@ -454,12 +495,22 @@ body {
   margin-right: 29px;
 }
 
-.footer-social-tw:hover {
-  color: #68A2CA;
-}
-
 .footer-social-fb {
   margin-right: 30px;
+}
+
+.footer-social-link:hover svg {
+  fill: #68A2CA;
+}
+
+.footer-social-link:focus svg {
+  outline: 3px solid #83B3D3;
+  outline-offset: 6px;
+  border-radius: 1px;
+}
+
+.footer-social-link:active {
+  fill: #68A2CA;
 }
 
 .footer-contacts {
@@ -490,16 +541,16 @@ body {
   color: #756257;
 }
 
-.footer-copyright:hover {
-  color: #756257;
+.footer-copyright:hover svg {
+  fill: #756257;
 }
 
-.footer-copyright:focus {
+.footer-copyright:focus svg {
   outline: 3px solid #83B3D3;
 }
 
-.footer-copyright:active {
-  color: #756257;
+.footer-copyright:active svg {
+  fill: #756257;
 }
 
 .inner-image {
