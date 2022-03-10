@@ -48,23 +48,26 @@ body {
   background-color: #FFFFFF;
 }
 
-.navigation {
+.navigation-menu {
+  position: relative;
   display: flex;
+  width: 1060px;
+  height: 65px;
 }
 
 .navigation-logo {
-  margin-right: 100px;
+  position: absolute;
   margin-left: 70px;
-  width: 140px;
+  width: 139px;
   height: 70px;
 }
 
 .navigation-list {
-  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin: 0;
+  margin-left: 240px;
   padding: 0;
   list-style-type: none;
 }
@@ -74,6 +77,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   margin-right: 34px;
   line-height: 26px;
@@ -92,19 +96,50 @@ body {
   color: #7562574D;
 }
 
+.navigation-link-selected::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  transform: translateY(20px);
+  width: 100%;
+  height: 2px;
+  background-color: #756257;
+}
+
 .navigation-icon {
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto;
   fill: #000000;
 }
 
+.navigation-link:hover .navigation-icon {
+  color: #756257;
+}
+
+.navigation-link:focus .navigation-icon {
+  color: #756257;
+}
+
+.navigation-icon-number {
+  transform: translate(12px, -7px);
+
+}
+
 .navigation-user .navigation-link {
   min-width: 18px;
+  min-height: 24px;
 }
 
 .button-navigation-user {
-  display: inline-block;
-  padding: 9px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 37px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -216,6 +251,27 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-icon-1::after {
+  content: "";
+  width: 74px;
+  height: 72px;
+  top: 89px;
+  left: 162px;
+  background-image: url("../images/advantage/icon-house.svg");
+}
+
+.advantages-icon-2 {
+  background-image: url("../images/advantage/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: 162px 89px;
+}
+
+.advantages-icon-3{
+  background-image: url("../images/advantage/icon-souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .advantages-heading {
   margin: 0;
   padding-top: 98px;
@@ -230,36 +286,39 @@ body {
 .advantages-description {
   margin: 0 90px;
   padding-top: 30px;
-  padding-bottom: 78px;
   font-size: 18px;
   line-height: 22px;
 }
 
 .hotel-search {
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 .hotel-search-title {
-  margin: 0 240px;
-  padding-top: 91px;
-  padding-bottom: 30px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 .hotel-search-description {
-  margin: 0 240px;
-  padding-bottom: 56px;
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0;
   font-size: 22px;
   line-height: 26px;
 }
 
 .button-hotel-search {
-  display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 312px;
-  margin-bottom: 93px;
   margin-left: 312px;
+  width: 575px;
+  height: 60px;
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
@@ -365,14 +424,11 @@ body {
 .page-footer-container {
   display: flex;
   justify-content: center;
-  padding: 50px 72px;
-  margin: 0 60px;
+  padding: 40px 72px;
 }
 
 .footer-social {
-  right: 60px;
   width: 107px;
-  margin-right: 61px;
 }
 
 .footer-social-list {
@@ -395,20 +451,20 @@ body {
 }
 
 .footer-social-tw {
-  background-image: url("/images/footer/social-twitter.svg");
+  margin-right: 29px;
+}
+
+.footer-social-tw:hover {
+  color: #68A2CA;
 }
 
 .footer-social-fb {
-  background-image: url("/images/footer/social-facebook.svg");
-}
-
-.footer-social-youtube {
-  background-image: url("/images/footer/social-youtube.svg");
+  margin-right: 30px;
 }
 
 .footer-contacts {
   width: 720px;
-  margin-left: 53px;
+  margin-left: 240px;
 }
 
 .contacts-phone {
@@ -426,6 +482,7 @@ body {
 
 .contacts-phone:focus {
   outline: 3px solid #83B3D3;
+  outline-offset: 6px;
   border-radius: 5px;
 }
 
