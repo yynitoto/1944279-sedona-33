@@ -409,6 +409,7 @@ body {
 }
 
 .newsletter-title {
+  margin-top: 73px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -454,7 +455,7 @@ body {
 }
 
 .newsletter-button:active {
-  background-color: #68a2ca;
+ opacity: 0.3;
 }
 
 .newsletter-catalog {
@@ -630,12 +631,25 @@ body {
 .button-reset {
   font-size: 18px;
   line-height: 23px;
-  width: 160px;
-  height: 23px;
+  width: 100px;
+  height: 32px;
   color: #ffffff;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+box-shadow: 0 0 0 3px  #83B3D3;
+border-radius: 4px;
+}
+
+.button-reset:active {
+  opacity: 0.3;
 }
 
 .sorting-container {
@@ -726,7 +740,7 @@ body {
 
 .hotel-card {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   width: 340px;
   height: 438px;
@@ -742,19 +756,18 @@ body {
 }
 
 .hotel-card-image {
-  margin: 16px 0px;
   width: 300px;
   height: 206px;
   left: 20px;
   top: 20px;
 }
 
-.hotel-card-image:hover {
-  opacity: 60%;
+.hotel-card-link:hover img {
+  opacity: 0.6;
 }
 
-.hotel-card-image:focus {
-  box-shadow: 3px solid rgba(131, 179, 211, 1);
+.hotel-card-link:focus img {
+ box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .hotel-card-title {
@@ -768,12 +781,16 @@ body {
 .hotel-price {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   margin-top: 16px;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.hotel-item {
+  width: 143px;
+  margin-right: 25px;
 }
 
 .button-group {
@@ -854,13 +871,25 @@ body {
   text-transform: uppercase;
 }
 
+.show-more {
+  border: 1px solid #E6E6E6;
+}
+
 .button-show-more {
   display: flex;
-  margin: 30px 290px;
+  margin: 60px 290px;
   width: 620px;
   height: 60px;
   font-size: 20px;
   line-height: 25px;
+}
+
+.button-show-more:hover {
+  background: #68A2CA;
+}
+
+.button-show-more:focus {
+  box-shadow: 0 0 0 3px #756257;
 }
 
 .show-more {
@@ -874,13 +903,13 @@ body {
 
 .pagination {
   display: flex;
-  margin-left: 72px;
+  align-items: center;
   background-color: #ffffff;
 }
 
 .pagination-list {
   display: flex;
-  margin: 0;
+  margin-left: 72px;
   padding: 0;
   list-style-type: none;
 }
@@ -919,11 +948,16 @@ body {
 }
 
 .hotel-show-more {
+  display: flex;
+  align-items: center;
   margin-right: 50px;
   margin-left: 300px;
 }
 
 .select-control {
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
   margin: 0;
   width: 160px;
   height: 48px;
