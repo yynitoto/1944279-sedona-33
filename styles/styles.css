@@ -429,6 +429,15 @@ body {
   padding-bottom: 94px;
 }
 
+.newsletter-email {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.newsletter-email .field {
+  width: 600px;
+}
+
 .newsletter-button {
   min-width: 200px;
   min-height: 60px;
@@ -499,6 +508,7 @@ body {
   outline-offset: 10px;
   width: 20px;
   height: 20px;
+
 }
 
 .footer-social-link:active {
@@ -522,6 +532,7 @@ body {
   box-shadow: 0 0 0 3px #83b3d3;
   outline-offset: 15px;
   border-radius: 1px;
+  outline: none;
 }
 
 .contacts-phone:active {
@@ -560,24 +571,38 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-left: 70px;
+  margin-left: 70px;
   color: #ffffff;
   list-style-type: none;
 }
 
 .breadcrumbs-link {
+  text-align: center;
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
-  opacity: 1;
 }
 
 .breadcrumbs-link:hover {
  opacity: 0.2;
 }
 
-.breadcrumbs-link svg {
+.breadcrumbs-link:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
+  border-radius: 4px;
+}
+
+.breadcrumbs-item::after {
+  content: url("../images/catalog/arrow.svg");
   margin-right: 10px;
+  margin-left: 10px;
+  width: 5 px;
+  height: 8 px;
+  opacity: 0.3;
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
 }
 
 .hotel-filter-group {
@@ -590,6 +615,10 @@ body {
   padding-top: 45px;
   margin-left: 71px;
   width: 150px;
+}
+
+.hotel-filter-group {
+  border: none;
 }
 
 .hotel-filter-title {
@@ -721,7 +750,7 @@ border-radius: 4px;
   border: 2px solid rgba(131, 179, 211, 1);
 }
 
-.card-grid-toggle-current {
+.card-grid-toggle-current:active {
   border: 2px solid rgba(0, 0, 0, 1);
 }
 
@@ -860,6 +889,25 @@ border-radius: 4px;
   justify-content: space-between;
 }
 
+.hotel-star-4 {
+  width: 88px;
+}
+
+.hotel-star-3 {
+  width: 70px;
+}
+
+.hotel-star-2 {
+  width: 44px;
+}
+
+.hotel-star {
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: space, no-repeat;
+  height: 17px;
+
+}
+
 .hotel-grade {
   padding: 10px;
   margin: 25px;
@@ -869,10 +917,13 @@ border-radius: 4px;
   color: #000000;
   background-color: #f2f2f2;
   text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .show-more {
-  border: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .button-show-more {

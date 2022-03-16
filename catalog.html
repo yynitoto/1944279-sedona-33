@@ -21,7 +21,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link navigation-link-selected" href="#">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -64,13 +64,10 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg class="breadcrumbs-home" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 0 0 5.8v6.2001h12v-6.2L6 0Zm5 11.0001H1v-4.8L6 1.4l5 4.8v4.8001Z" />
                   <path d="M4 10.0001h1v-2.5h2V10h1v-3.5H4V10Z" />
-                </svg>
-                <svg width="5" height="8" viewBox="0 0 5 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.79998 3.60005.999984.200049c-.2-.2-.6-.2-.9 0-.3.2-.2.6 0 .800001l3.299996 3-3.199996 3c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.799996-3.4c.3-.2.3-.6 0-.8Z" />
                 </svg>
                 <span class="visually-hidden">Главная</span>
               </a>
@@ -149,7 +146,7 @@
             </button>
           </li>
           <li>
-            <button class="card-grid-toggle" type="button">
+            <button class="card-grid-toggle card-grid-toggle-current" type="button">
               <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z"
@@ -167,18 +164,14 @@
               alt="Деревья и горы.">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
-            <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 4000 ₽</span></p>
-            <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-blue" href="#">В избранное</a>
-            </div>
-            <div class="hotel-info">
-              <svg width="91" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Zm25 0 2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Zm25 0 2.1 6.5H68l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L59 0Zm23 0 2.1 6.5H91l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L82 0Z"
-                  fill="#83B3D3" />
-              </svg>
-              <span class="hotel-grade">Рейтинг: 8,5</span>
-            </div>
+          <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 4000 ₽</span></p>
+          <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+          </div>
+          <div class="hotel-info"><span class="hotel-star hotel-star-4"><span class="visually-hidden">4
+                звезды</span></span>
+            <span class="hotel-grade">Рейтинг: 8,5</span>
+          </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
@@ -186,18 +179,14 @@
               alt="Дом на фоне горы.">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
-            <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 3000 ₽</span></p>
-            <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-blue" href="#">В избранное</a>
-            </div>
-            <div class="hotel-info">
-              <svg width="68" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Zm25 0 2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Zm25 0 2.1 6.5H68l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L59 0Z"
-                  fill="#83B3D3" />
-              </svg>
-              <span class="hotel-grade">Рейтинг: 8,9</span>
-            </div>
+          <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 3000 ₽</span></p>
+          <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+          </div>
+          <div class="hotel-info"><span class="hotel-star hotel-star-3"><span class="visually-hidden">
+                3 звезды</span></span>
+            <span class="hotel-grade">Рейтинг: 8,9</span>
+          </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
@@ -205,18 +194,14 @@
               alt="Гора на фоне неба.">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
-            <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 2000 ₽</span></p>
-            <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-green" href="#">В избранное</a>
-            </div>
-            <div class="hotel-info">
-              <svg width="43" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Zm25 0 2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Z"
-                  fill="#83B3D3" />
-              </svg>
-              <span class="hotel-grade">Рейтинг: 9,2</span>
-            </div>
+          <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 2000 ₽</span></p>
+          <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-green" href="#">В избранное</a>
+          </div>
+          <div class="hotel-info"><span class="hotel-star hotel-star-2"><span class="visually-hidden">2
+                звезды</span></span>
+            <span class="hotel-grade">Рейтинг: 9,2</span>
+          </div>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
@@ -224,18 +209,14 @@
               alt="Серпантин в горах.">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
-            <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 3000 ₽</span></p>
-            <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
-              <a class="button button-blue" href="#">В избранное</a>
-            </div>
-            <div class="hotel-info">
-              <svg width="68" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Zm25 0 2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Zm25 0 2.1 6.5H68l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L59 0Z"
-                  fill="#83B3D3" />
-              </svg>
-              <span class="hotel-grade">Рейтинг: 9,2</span>
-            </div>
+          <p class="hotel-price"><span class="hotel-item">Гостиница</span><span>От 3000 ₽</span></p>
+          <div class="button-group"><a class="button button-brown" href="#">Подробнее</a>
+            <a class="button button-blue" href="#">В избранное</a>
+          </div>
+          <div class="hotel-info"><span class="hotel-star hotel-star-2"><span class="visually-hidden">2 звезды</span>
+            </span>
+            <span class="hotel-grade">Рейтинг: 9,2</span>
+          </div>
         </li>
       </ul>
       <div class="show-more">
