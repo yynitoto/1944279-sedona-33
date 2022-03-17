@@ -439,8 +439,8 @@ body {
 }
 
 .newsletter-button {
-  min-width: 200px;
-  min-height: 60px;
+  width: 200px;
+  height: 60px;
   font-family: inherit;
   font-size: 20px;
   line-height: 26px;
@@ -478,10 +478,6 @@ body {
   padding: 40px 60px;
 }
 
-.footer-social {
-  max-width: 107px;
-}
-
 .footer-social-list {
   display: flex;
   flex-wrap: nowrap;
@@ -490,29 +486,34 @@ body {
   list-style-type: none;
 }
 
-.footer-social-item {
-  position: relative;
-  margin-right: 29px;
-  cursor: pointer;
+.footer-social-item:last-child {
+  margin-right: 0;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
 }
 
 .footer-social-link svg {
-  color: #68a2ca;
-  top: 11px;
-  left: 15px;
+  fill: #83B3D3;
+}
+
+.footer-social-link:hover svg {
+  fill: #68A2CA;
 }
 
 .footer-social-link:focus svg {
-  outline: 3px solid #83B3D3;
-  border-radius: 1px;
-  outline-offset: 10px;
-  width: 20px;
-  height: 20px;
-
+  fill: #83B3D3;
 }
 
-.footer-social-link:active {
-  fill: #68a2ca;
+.footer-social-link:focus {
+  box-shadow: inset 0 0 0 3px #83B3D3;
 }
 
 .contacts-phone {
@@ -551,6 +552,58 @@ body {
 
 .htmlacademy-link:active svg {
   fill: #756257;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+/* .modal-container-close {
+  display: none;
+} */
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.modal-auth {
+  width: 715px;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 44px;
+  background-color: #F2F2F2;
+  border: none;
+  background-image: url("../images/modal/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .inner-image {
@@ -633,18 +686,131 @@ body {
   color: #ffffff;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 39px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  background-color: transparent;
+  background-image: url("../images/catalog/checkbox.svg");
+}
+
+.control:hover .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 4px;
+}
+
+.hotel-filter-label {
+  display: flex;
+}
+
+.range-input {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: #FFFFFF;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.range-toggle:active {
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(131, 179, 211, 1);
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 51px;
+}
+
+.button-hotel-filter {
+  display: flex;
+  flex-direction: column;
+}
+
 .button-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   width: 160px;
   height: 48px;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .button-submit:hover {
