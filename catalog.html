@@ -98,7 +98,7 @@
               </div>
               <div class="hotel-filter-item">
                 <label class="control">
-                  <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi" id="wi-fi">
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-Fi</span>
                 </label>
@@ -108,21 +108,21 @@
               <legend class="hotel-filter-title">Тип жилья:</legend>
               <div class="hotel-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="hotel" id="hotel" checked>
+                  <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Гостиница</span>
                 </label>
               </div>
               <div class="hotel-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="motel" id="motel">
+                  <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel">
                   <span class="control-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
               </div>
               <div class="hotel-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="apartments" id="apartments">
+                  <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
                   <span class="control-mark"></span>
                   <span class="control-label">Апартаменты</span>
                 </label>
@@ -133,16 +133,18 @@
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <label class="hotel-filter-label">
+                    <span class="range-text-min">от</span>
                     <input class="range-input" type="number" value="0" name="min-price"
                       style="width: 143px; height: 48px">
                   </label>
                   <label class="catalog-filter-label">
+                    <span class="range-text-max">до</span>
                     <input class="range-input" type="number" value="9000" name="max-price"
-                      style="width: 144px; height: 48px">
+                      style="width: 143px; height: 48px">
                   </label>
                 </div>
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0px; width: 287px">
+                  <div class="range-bar" style="left: 0px; width: 227px">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -162,11 +164,13 @@
       </div>
       <div class="sorting-container">
         <label class="hotel-search-result">Найдено гостиниц: 38</label>
-        <select class="sorting-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap" selected>Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
+        <div class="select">
+          <select class="sorting-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap" selected>Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+        </div>
         <ul class="button-control-list">
           <li>
             <button class="card-grid-toggle card-grid-toggle-current" type="button">
@@ -186,7 +190,7 @@
             </button>
           </li>
           <li>
-            <button class="card-grid-toggle card-grid-toggle-current" type="button">
+            <button class="card-grid-toggle" type="button">
               <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z"
@@ -285,13 +289,15 @@
           </li>
         </ul>
         <label class="hotel-show-more">Гостиниц на странице:</label>
-        <select class="select-control" aria-label="Колличество">
-          <option value="2">2</option>
-          <option value="4" selected>4</option>
-          <option value="6">6</option>
-          <option value="8">8</option>
-          <option value="10">10</option>
-        </select>
+        <div class="select-pagination">
+          <select class="select-control" aria-label="Колличество">
+            <option value="2">2</option>
+            <option value="4" selected>4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+          </select>
+        </div>
       </div>
     </div>
   </main>
