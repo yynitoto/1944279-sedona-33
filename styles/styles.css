@@ -292,8 +292,8 @@ body {
 .advantages-icon-1::after {
   display: block;
   position: absolute;
-  top: 89px;
-  right: 162px;
+  top: 88px;
+  right: 163px;
   content: "";
   width: 74px;
   height: 72px;
@@ -304,8 +304,8 @@ body {
 .advantages-icon-2::after {
   display: block;
   position: absolute;
-  top: 89px;
-  right: 162px;
+  top: 90px;
+  right: 163px;
   content: "";
   width: 74px;
   height: 70px;
@@ -316,8 +316,8 @@ body {
 .advantages-icon-3::after {
   display: block;
   position: absolute;
-  top: 89px;
-  right: 162px;
+  top: 84px;
+  right: 168px;
   content: "";
   width: 64px;
   height: 75px;
@@ -435,7 +435,7 @@ body {
 }
 
 .newsletter-title {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   padding: 22px 0px 0px 0px;
   font-weight: 700;
   font-size: 30px;
@@ -444,7 +444,7 @@ body {
 }
 
 .newsletter-title-inner {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   padding: 52px 0px 0px 0px;
 }
 
@@ -457,15 +457,15 @@ body {
 }
 
 .newsletter-description-inner {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   padding: 44px 0px 0px 0px;
 }
 
 .newsletter-form {
   display: flex;
   justify-content: center;
-  margin: 0px 0px 0px 12px;
-  padding: 0px 0px 92px 0px;
+  margin: -2px 0px -2px 1px;
+  padding: 0px 0px 94px 0px;
 }
 
 .newsletter-form-inner {
@@ -474,15 +474,17 @@ body {
 }
 
 .input-email {
-  padding: 0px 0px 0px 24px;
+  margin: 0px -4px 0px 0px;
+  padding: 14px 22px;
   font: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   width: 600px;;
   border-radius: 10px 0px 0px 10px;
-  outline: none;
+  border: none;
   background-color: #F2F2F2;
+  box-sizing: border-box;
 }
 
 .input-email:hover {
@@ -491,6 +493,7 @@ body {
 
 .input-email:focus {
   box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
 }
 
 .input-email:valid {
@@ -506,8 +509,8 @@ body {
 }
 
 .newsletter-button {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 3px;
+  padding: 0;
   width: 200px;
   height: 60px;
   font-family: inherit;
@@ -521,6 +524,11 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 0px 10px 10px 0px;
+}
+
+.newsletter-button-inner {
+  margin: 0px -22px 0px 3px;
+  padding: 0;
 }
 
 .newsletter-button:hover {
@@ -544,7 +552,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   padding: 25px 0px 0px 0px;
 }
 
@@ -557,7 +565,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   margin: 0;
-  margin: 0px 0px 0px 66px;
+  margin: 0px 0px 0px 62px;
   padding: 0;
   list-style-type: none;
 }
@@ -570,6 +578,14 @@ body {
   height: 40px;
   border-radius: 4px;
   outline: none;
+}
+
+.footer-social-fb {
+  margin: 0px 0px 0px 2px;
+}
+
+.footer-social-youtube {
+  margin: 0px 0px 0px 5px;
 }
 
 .footer-social-link svg {
@@ -591,7 +607,7 @@ body {
 
 .contacts-phone {
   padding: 15px;
-  margin: 0px 0px 0px 19px;
+  margin: 0px 0px 0px 20px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -642,9 +658,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -954,16 +970,14 @@ background-color: #F2F2F2;
   display: flex;
   align-items: center;
   margin: 0;
-  margin: 0px 0px 35px 69px;
-  padding: 0px 0px 0px 0px;
+  margin: -10px 0px 35px 66px;
+  padding: 0;
   color: #ffffff;
   list-style-type: none;
 }
 
 .breadcrumbs-item {
   position: relative;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
 }
 
 .breadcrumbs-link {
@@ -975,6 +989,12 @@ background-color: #F2F2F2;
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+}
+
+.breadcrumbs-link-hotel {
+  font-size: 16px;
+  margin: 0px 0px 0px 20px;
+  padding: 0;
 }
 
 .breadcrumbs-home {
@@ -1018,6 +1038,8 @@ background-color: #F2F2F2;
 .hotel-filter {
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 7px 0px 0px 0px;
 }
 
 .hotel-filter-title {
@@ -1083,7 +1105,7 @@ background-color: #F2F2F2;
 
 .range-filter-group {
   margin: 0px 9px 0px 0px;
-  padding: 12px 0px 0px 0px;
+  padding: 13px 7px 0px 0px;
   width: 287px;
   border: none;
 }
@@ -1099,13 +1121,12 @@ background-color: #F2F2F2;
   align-items: center;
   justify-content: center;
   margin: 0px 0px 0px 37px;
-  padding: 0px 0px 0px 0px;
-
+  padding: 4px 0px 0px 0px;
 }
 
 .range-text-min {
   position: absolute;
-  top: 14px;
+  top: 17px;
   left: 112px;
   font-size: 18px;
   line-height: 23px;
@@ -1115,7 +1136,7 @@ background-color: #F2F2F2;
 
 .range-text-max {
   position: absolute;
-  top: 14px;
+  top: 19px;
   right: 20px;
   font-size: 18px;
   line-height: 23px;
@@ -1136,10 +1157,14 @@ background-color: #F2F2F2;
 
 .range-input-min {
   border-radius: 4px 0px 0px 4px;
+  padding: 6px 0px 0px 15px;
+  box-sizing: border-box;
 }
 
 .range-input-max {
   border-radius: 0px 4px 4px 0px;
+  padding: 6px 0px 0px 15px;
+  box-sizing: border-box;
 }
 
 .range-input:hover {
@@ -1165,9 +1190,9 @@ background-color: #F2F2F2;
 
 .range-scale {
   position: relative;
+  margin: 30px 0px 0px 38px;
+  padding: 0;
   height: 4px;
-  margin: 27px 0px 0px 38px;
-  padding: 0px 0px 0px 0px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1214,8 +1239,8 @@ background-color: #F2F2F2;
 .button-hotel-filter {
   display: flex;
   flex-direction: column;
-  margin: 0px 44px 0px 0px;
-  padding: 60px 0px 0px 0px;
+  margin: 0px 38px 0px 0px;
+  padding: 63px 0px 0px 0px;
 }
 
 .button-submit {
@@ -1248,7 +1273,7 @@ background-color: #F2F2F2;
 }
 
 .button-reset {
-  padding: 0;
+
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -1443,6 +1468,7 @@ background-color: #F2F2F2;
 }
 
 .button-brown {
+  margin: 0px 0px 0px 3px;
   font-size: 16px;
   line-height: 20px;
   background-color: #756257;
@@ -1469,6 +1495,7 @@ background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
   background-color: #7db54f;
+  margin: -3px 0px 0px -10px;
 }
 
 .button-green:hover {
@@ -1483,19 +1510,23 @@ background-color: #F2F2F2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 13px;
+  margin: 0px 6px 0px 22px;
+  padding: 0;
 }
 
 .hotel-star-4 {
   width: 88px;
+  margin-top: 10px;
 }
 
 .hotel-star-3 {
   width: 70px;
+  margin-top: 10px;
 }
 
 .hotel-star-2 {
   width: 44px;
+  margin-top: 10px;
 }
 
 .hotel-star {
