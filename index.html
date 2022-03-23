@@ -24,9 +24,9 @@
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link navigation-user" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="19" viewBox="0 0 20 19"
               fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -38,9 +38,9 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" viewBox="0 0 19 17"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <a class="navigation-link navigation-user" href="#">
+            <svg class="navigation-icon navigation-icon-favorite" aria-hidden="true" focusable="false" width="19" height="17"
+              viewBox="0 0 19 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.44382 17c-.30086 0-.60171-.1-.80227-.4-5.41533-6.1-6.71902-7.5-7.01987-7.9C.91969 7.8.518555 6.6.518555 5.4c0-3 2.406815-5.4 5.515605-5.4 1.30369 0 2.5071.5 3.50994 1.3C10.5469.5 11.8506 0 13.054 0c3.0085 0 5.5156 2.4 5.5156 5.4 0 1.3-.5014 2.5-1.3036 3.4l-7.0199 7.9c-.2006.2-.40115.3-.80228.3ZM3.42679 7.5c.30085.4 3.50993 4 6.11731 6.9l6.2176-7c.5014-.5.702-1.2.702-2 0-1.8-1.5043-3.3-3.3094-3.3-1.0028 0-2.0057.5-2.7076 1.3-.3009.3-.60175.4-.9026.4-.30085 0-.6017-.2-.80227-.4-.70199-.8-1.70483-1.3-2.70767-1.3-1.8051 0-3.30936 1.5-3.30936 3.3-.10028.9.30085 1.6.70199 2.1-.10029 0-.10029 0 0 0Z" />
             </svg>
@@ -81,18 +81,18 @@
             <ul class="services-list">
               <li class="advantages-item advantages-item-light advantages-icon-1">
                 <h3 class="advantages-heading  advantages-services">Жильё</h3>
-                <p class="advantages-description">Рекомендуем пожить<br>
+                <p class="advantages-description services-description">Рекомендуем пожить<br>
                   в настоящем мотеле,<br>
                   всё как в кино!</p>
               </li>
               <li class="advantages-item advantages-icon-2">
                 <h3 class="advantages-heading advantages-services">Еда</h3>
-                <p class="advantages-description">Всегда заказывайте
+                <p class="advantages-description services-description">Всегда заказывайте<br>
                   топовый фирменный бургер, <br>вы не разочаруетесь!</p>
               </li>
               <li class="advantages-item advantages-item-light advantages-icon-3">
                 <h3 class="advantages-heading advantages-services">Сувениры</h3>
-                <p class="advantages-description">Не только китайского,<br>
+                <p class="advantages-description services-description">Не только китайского,<br>
                   но и настоящего местного<br> производства!</p>
               </li>
             </ul>
@@ -110,19 +110,19 @@
 
           </li>
           <li class="advantages-item advantages-item-light">
-            <h3 class="advantages-heading">Небольшая площадь</h3>
+            <h3 class="advantages-heading">Небольшая<br> площадь</h3>
             <p class="advantages-description-number">— №3 —</p>
             <p class="advantages-description">Все достопримечательности <br>
               находятся очень близко</p>
           </li>
           <li class="advantages-item advantages-item-light-blue">
-            <h3 class="advantages-heading">Красивая дорога</h3>
+            <h3 class="advantages-heading">Красивая<br> дорога</h3>
             <p class="advantages-description-number">— №4 —</p>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса <br>
               совсем не скучно!</p>
           </li>
           <li class="advantages-item advantages-item-light">
-            <h3 class="advantages-heading">Мало туристов</h3>
+            <h3 class="advantages-heading">Мало<br> туристов</h3>
             <p class="advantages-description-number">— №5 —</p>
             <p class="advantages-description">Большинство едет в Гранд <br>
               Каньон и толпится там</p>
@@ -251,14 +251,14 @@
                 <button class="search-reduce" type="button" aria-label="Уменьшить количество">
                   <svg class="reduce-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0v2h14V0H0Z" fill="#000" />
+                    <path d="M0 0v2h14V0H0Z" />
                   </svg>
                 </button>
                 <input class="search-input search-input-amount" type="text" id="amount-adults" name="adults" value="2">
                 <button class="search-increase" type="button" aria-label="Увеличеть колличество">
                   <svg class="increase-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#000" />
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
                 </button>
               </div>
@@ -280,7 +280,7 @@
                 <button class="search-reduce" type="button" aria-label="Уменьшить количество">
                   <svg class="reduce-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0v2h14V0H0Z" fill="#000" />
+                    <path d="M0 0v2h14V0H0Z" />
                   </svg>
                 </button>
                 <input class="search-input search-input-amount" type="text" id="amount-children" name="children"
@@ -288,7 +288,7 @@
                 <button class="search-increase" type="button" aria-label="Увеличеть колличество">
                   <svg class="increase-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#000" />
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
                 </button>
               </div>
