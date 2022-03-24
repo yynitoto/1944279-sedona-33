@@ -737,7 +737,7 @@ body {
 }
 
 .search-input {
-  padding-left: 19px;
+  padding: 16px 150px 16px 19px;
   font: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -967,7 +967,7 @@ body {
   background-size: 100% auto;
   background-color: #68A2CA;
   width: 1200px;
-  height: 408px;
+  min-height: 408px;
 }
 
 .inner-header-title {
