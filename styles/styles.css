@@ -964,7 +964,7 @@ body {
 .inner-image {
   background-image: url("../images/catalog/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #68A2CA;
   width: 1200px;
   min-height: 408px;
